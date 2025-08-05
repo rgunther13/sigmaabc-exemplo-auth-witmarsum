@@ -6,7 +6,11 @@ const app = express();
 app.get('/', (req, res) => {
   
   // Acessa os parâmetros da URL
-  const { matricula, nome, cpf, cnpj, tipo } = req.query;
+   const matricula = '1234';
+  const nome = 'Nome do usuário';
+  const cpf = '00000000000'
+  const cnpj = null;
+  //const { matricula, nome, cpf, cnpj, tipo } = req.query;
 
   // Lógica para obter a senha de forma segura (não hardcoded)
   const senha_da_cooperativa = 'N0FFCJSN4V75JH6SUT05587G7JGMYHEUAUPDW66E19F47A23FWNYPFGTFPXZU3QL'; 
